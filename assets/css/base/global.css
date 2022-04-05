@@ -3,6 +3,17 @@
     --primary-color-alt: rgb(244, 34, 103);
     --sechondary-color: #6633cc;
     --sechondary-color:  rgb(95, 63, 184);
-    --tetiary: rgb(40, 29, 60);
+    --sechondary-color-active: rgb(40, 29, 60);
     font-family: 'Courier New', Courier, monospace;
+}
+
+* {
+    box-sizing: border-box;
+    resize: none;
+    user-select: text;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
 }
