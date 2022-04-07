@@ -1,8 +1,19 @@
-.button {
-     
+.Button {
+    border-radius: 5px;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
 }
 
-.button--header {
-    background-color: rgb(244, 34, 103);
-    box-shadow: 1.169px 3.825px 16px 0px rgba(1, 2, 2, 0.35);
+.Button-lg {
+    padding: 14px 27px;
+}
+
+.Button-sm {
+    padding: 10px 14px;
 }

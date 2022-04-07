@@ -1,0 +1,16 @@
+nav {
+    position: relative;
+}
+
+nav ul > li {
+    padding: 0 1.125rem;
+}
+
+nav ul > li:first-child {
+    padding-left: 0;
+}
+
+nav a {
+    color: #fff;
+    font-size: 16px;
+}

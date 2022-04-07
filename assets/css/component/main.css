@@ -1,0 +1,33 @@
+.About {
+    position: relative;
+    padding: 10px  0;
+    background-image: url("../../image/background/pattern.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.About-heading {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.About-tab {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.About-img {
+    grid-column: 2/-1;
+    grid-row: 1/3;
+    background-color: var(--primary-color);
+}
+
+
+.About-button {
+    grid-row: 3;
+    grid-column: 1;
+    background-color: var(--primary-color);
+    justify-self: flex-start;
+    border-radius: 10px;
+}

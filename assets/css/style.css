@@ -1,6 +1,6 @@
 @import url("./base/global.css");
-@import url("./base/wrapper.css");
-@import url("./base/overlay.css");
+@import url("./utilities/container.css");
+@import url("./utilities/overlay.css");
 @import url("./component/article.css");
 @import url("./component/button.css");
 @import url("./component/form.css");

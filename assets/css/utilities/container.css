@@ -1,0 +1,74 @@
+.u-wrapper {
+    max-width: var(--large-screen);
+    margin: 0 auto;
+}
+
+.u-wrapperSpace {
+    margin: 50px auto;
+}
+
+.u-grid {
+    display: grid;
+}
+
+.u-grid2 {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 20px
+}
+
+.u-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.u-flexRow {
+    flex-direction: row;
+}
+
+.u-flexSplit {
+    justify-content: space-between;
+}
+
+.u-flexAlignCenter {
+    align-items: center;
+}
+
+.u-flexJustifyCenter {
+    justify-content: center;
+}
+
+.u-flexJustifyEnd {
+    justify-content: flex-end;
+}
+
+.u-hidden {
+    position: absolute;
+    z-index: -99999;
+    top: -9999px;
+    left: -9999px;
+}
+
+.u-noListStyle {
+    list-style: none;
+}
+
+.u-zIndex {
+    z-index: 1;
+}
+
+.u-capitalize {
+    text-transform: capitalize;
+}
+
+.u-shadowBlack {
+    box-shadow: 1.1696px 3.8256px 16px 0px rgba(1, 2, 2, 0.35);
+}
+
+.u-shadowRed {
+    box-shadow: 0px 10px 0px 0px var(--primary-color-transparent);
+      
+}
+
+.u-textWhite {
+    color: #fff
+}

@@ -5,65 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header>
-        <div id="wrapper">
-            <div>
-                <h2>BlueRex Logo</h2>
-                <img src="" alt="BlueRex Logo" />
-            </div>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Features</li>
-                    <li>Product</li>
-                    <li>Reviews</li>
-                    <li>faq</li>
-                    <li>contact</li>
+    <header class="Header  c-overlay">
+        <div class="Header-wrapper u-wrapper u-grid u-grid2">
+            <section class="Header-logo u-zIndex">
+                <h2 class="u-hidden">BlueRex Logo</h2>
+                <img src="./assets/image/logo/sitelogo.png" alt="BlueRex Logo"/>
+            </section>
+            <nav class="Header-nav u-flex u-flexAlignCenter u-flexJustifyCenter">
+                <ul class="u-flex u-flexRow u-flexJustifyEnd u-noListStyle u-capitalize">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Reviews</a></li>
+                    <li><a href="">faq</a></li>
+                    <li><a href="">contact</a></li>
                 </ul>
             </nav>
+            <article class="Header-content u-grid u-grid2  u-zIndex">
+                <h1 class="Heading Header-heading"><i>We are the best creative agency</i><strong>We turn creative ideas into your business.</strong></h1>
+                <p class="Header-desc">Everything built started from an idea, Turn your dreams into reality</p>
+                <ul class="u-noListStyle u-flex u-flexRow Header-buttonWrapper">
+                    <li><a href="#" class="Button Button-lg Header-button Header-buttonLeft u-shadowBlack">Branding</a></li>
+                    <li><a href="#" class="Button Button-lg Header-button Header-buttonRight u-shadowBlack">Enquire</a></li>
+                </ul>
+                <img src="./assets/image/banner_image.png" alt="product image list" class="Header-img">
+            </article>
         </div>
-        <article id="wrapper">
-            <h1><i>Dream Big Inspire the world</i> <strong>We turn creative ideas into your business.</strong></h1>
-            <p>Everything built started from an idea, Turn your dreams into reality</p>
-            <section>
-                <h2>Action button</h2>
-                <a href="">Branding</a>
-                <a href="">Enquire</a>
-            </section>
-            <img src="" alt="product image list">
-        </article>
     </header>
-    <main>
-        <article>
-            <h2><i>No Dream is small</i> <strong>We turn your dreams into reality</strong></h2>
-            <div>
+    <main class="About">
+        <article class="u-wrapper u-wrapperSpace u-grid u-grid2 About">
+            <h2 class="Heading About-heading"><i>No Dream is small</i> <strong>We turn your dreams into reality</strong></h2>
+            <section class="About-tab">
+                <h3 class="u-hidden">Tabs</h3>
+                <ul>
+                    <li><a href="">Logo Design</a></li>
+                    <li><a href="">Marketing</a></li>
+                    <li><a href="">Banners</a></li>
+                    <li><a href="">Branding</a></li>
+                </ul>
                 <section>
-                    <h3>Tabs</h3>
-                    <ul>
-                        <li><a href="">Logo Design</a></li>
-                        <li><a href="">Marketing</a></li>
-                        <li><a href="">Banners</a></li>
-                        <li><a href="">Branding</a></li>
-                    </ul>
-                    <section>
-                        <h4 class="hidden">current tab content</h4>
-                        <p>
-                        The best way to make your product well known is by creating your own brand
-                        with us, we don't only create brand we create a logo for you as well and
-                        delivered your product as planned and as sheduled.
-                        </p>
-                    </section>
+                    <h4 class="hidden">current tab content</h4>
+                    <p>
+                    The best way to make your product well known is by creating your own brand
+                    with us, we don't only create brand we create a logo for you as well and
+                    delivered your product as planned and as sheduled.
+                    </p>
                 </section>
-                <!-- <details>
-                    <summary>Details</summary>
-                    Something small enough to escape casual notice.
-                </details>                 -->
-                <img src="" alt="fast delivery" />
-            </div>
-            <button>Read More</button>
+            </section>
+            <img src="./assets/image/watch.png" alt="fast delivery" class="About-img" />
+            <button class="About-button Button Button-sm u-textWhite u-shadowRed">Read More</button>
+            <!-- <details>
+                <summary>Details</summary>
+                Something small enough to escape casual notice.
+            </details>   -->
         </article>
         <article>
             <h2 class="hidden">Features</h2>
@@ -211,45 +209,47 @@
         </article>
     </main>
     <footer>
-        <article>
-            <h2>About Company</h2>
+        <div class="u-wrapper">
             <article>
-                <h3>BLUEREX</h3>
-                <h4>Best branding agency</h4>
-                <p>Our aim is to bring your dreams to live by using our professional ideas and creativity
-                    to give you the best and deliver your work as sheduled
-                </p>
+                <h2>About Company</h2>
+                <article>
+                    <h3>BLUEREX</h3>
+                    <h4>Best branding agency</h4>
+                    <p>Our aim is to bring your dreams to live by using our professional ideas and creativity
+                        to give you the best and deliver your work as sheduled
+                    </p>
+                </article>
             </article>
-        </article>
-        <article>
-            <h2>Quick Link</h2>
-            <ul>
-                <li><a href="">Our Service</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Terms</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Sitemap</a></li>
-            </ul>
-        </article>
-        <article>
-            <h2>Brand Categories</h2>
-            <ul>
-                <li><a href="">T-shirt</a></li>
-                <li><a href="">Mug</a></li>
-                <li><a href="">Tag</a></li>
-                <li><a href="">Gift</a></li>
-                <li><a href="">Bottle</a></li>
-            </ul>
-        </article>
-        <article>
-            <h2>Contact Us</h2>
-            <address>
-                <p>No 145 new street line, opp site resturant NGA</p>
-                <a href="mailto:bluerex@in.com">bluerex@in.com</a><br>
-                <a href="tel:+123456789">(311) 555-2368</a>
-            </address>
-        </article>
-        <p>&copy; by Bluerex 2022</p>
+            <article>
+                <h2>Quick Link</h2>
+                <ul>
+                    <li><a href="">Our Service</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Sitemap</a></li>
+                </ul>
+            </article>
+            <article>
+                <h2>Brand Categories</h2>
+                <ul>
+                    <li><a href="">T-shirt</a></li>
+                    <li><a href="">Mug</a></li>
+                    <li><a href="">Tag</a></li>
+                    <li><a href="">Gift</a></li>
+                    <li><a href="">Bottle</a></li>
+                </ul>
+            </article>
+            <article>
+                <h2>Contact Us</h2>
+                <address>
+                    <p>No 145 new street line, opp site resturant NGA</p>
+                    <a href="mailto:bluerex@in.com">bluerex@in.com</a><br>
+                    <a href="tel:+123456789">(311) 555-2368</a>
+                </address>
+            </article>
+            <p>&copy; by Bluerex 2022</p>
+        </div>
     </footer>
 </body>
 </html>

@@ -1,0 +1,4 @@
+:is(header, main, footer) p:hover {
+    color: red;
+    cursor: pointer;
+  }

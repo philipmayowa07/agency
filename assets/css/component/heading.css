@@ -1,0 +1,16 @@
+.Heading {
+    position: relative;
+    font-weight: 600;
+    line-height: 1;
+      
+}
+
+.Heading > strong {
+    font-weight: 600;
+}
+
+.Heading > i {
+    font-weight: 300;
+    display: block;
+    margin-bottom: 18px;
+}

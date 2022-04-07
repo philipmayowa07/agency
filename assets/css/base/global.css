@@ -1,19 +1,45 @@
 :root {
-    --primary-color: #ff3366;
-    --primary-color-alt: rgb(244, 34, 103);
+    --primary-color: hsl(340, 86%, 54%);
+    --primary-color-transparent: hsla(340, 86%, 54%, 0.4);
     --sechondary-color: #6633cc;
     --sechondary-color:  rgb(95, 63, 184);
     --sechondary-color-active: rgb(40, 29, 60);
-    font-family: 'Courier New', Courier, monospace;
+    --base-font-size: 1rem;
+    --small-screen: 400px;
+    --medium-screen: 600px;
+    --large-screen: 1200px;
 }
 
 * {
     box-sizing: border-box;
     resize: none;
     user-select: text;
+    font-family: 'Montserrat', Arial, Courier, monospace;
 }
 
 a {
     text-decoration: none;
     color: #333;
+}
+
+img {
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    padding: 0;
+    margin: 0;
 }
