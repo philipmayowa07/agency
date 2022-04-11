@@ -1,10 +1,13 @@
-.About {
+.Main {
     position: relative;
-    padding: 10px  0;
     background-image: url("../../image/background/pattern.png");
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
+}
+
+.About {
+    position: relative;
+    column-gap: 140px;
 }
 
 .About-heading {
@@ -17,10 +20,27 @@
     grid-row: 2;
 }
 
+.About-tabHeading  {
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+
+.About-tabHeading > li {
+    padding: 10px 16px;
+}
+
+.About-tabHeading > li:nth-child(1) {
+    padding-left: 0;
+}
+
+.About-tabContent {
+    line-height: 25px;
+}
+
+
 .About-img {
     grid-column: 2/-1;
-    grid-row: 1/3;
-    background-color: var(--primary-color);
+    grid-row: 1/4;
 }
 
 
@@ -29,5 +49,50 @@
     grid-column: 1;
     background-color: var(--primary-color);
     justify-self: flex-start;
+    align-self: flex-start;
     border-radius: 10px;
+}
+
+
+.Feature {
+    position: relative;
+    background-color: var(--sechondary-color);
+}
+
+.Feature-wrapper {
+    column-gap: 50px;
+}
+
+.Feature-card {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.Feature-cardTitle {
+    font-size: 40px;
+}
+
+.Feature-cardTitle > img {
+    margin-bottom: 15px;
+}
+
+.Feature-cardSubtitle {
+    font-size: 25px;
+    margin: 9px 0 22px 0;
+}
+
+.Feature-cardSubtitle > b {
+    font-size: 30px;
+}
+
+
+.Feature-cardActive {
+    background-color: var(--sechondary-color-active);
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+.Feature.desc {
+    line-height: 24px;
 }

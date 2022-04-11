@@ -9,12 +9,12 @@
 </head>
 <body>
     <header class="Header  c-overlay">
-        <div class="Header-wrapper u-wrapper u-grid u-grid2">
+        <div class="u-wrapper u-wrapperSpaceSm u-grid u-grid2">
             <section class="Header-logo u-zIndex">
                 <h2 class="u-hidden">BlueRex Logo</h2>
                 <img src="./assets/image/logo/sitelogo.png" alt="BlueRex Logo"/>
             </section>
-            <nav class="Header-nav u-flex u-flexAlignCenter u-flexJustifyCenter">
+            <nav class="Header-nav u-flex u-flexJustifyCenter">
                 <ul class="u-flex u-flexRow u-flexJustifyEnd u-noListStyle u-capitalize">
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
@@ -36,20 +36,20 @@
             </article>
         </div>
     </header>
-    <main class="About">
+    <main class="Main">
         <article class="u-wrapper u-wrapperSpace u-grid u-grid2 About">
             <h2 class="Heading About-heading"><i>No Dream is small</i> <strong>We turn your dreams into reality</strong></h2>
             <section class="About-tab">
                 <h3 class="u-hidden">Tabs</h3>
-                <ul>
-                    <li><a href="">Logo Design</a></li>
-                    <li><a href="">Marketing</a></li>
-                    <li><a href="">Banners</a></li>
-                    <li><a href="">Branding</a></li>
+                <ul class="u-flex u-noListStyle u-flexRow About-tabHeading">
+                    <li>Logo Design</li>
+                    <li>Marketing</li>
+                    <li>Banners</li>
+                    <li class="u-active">Branding</li>
                 </ul>
                 <section>
-                    <h4 class="hidden">current tab content</h4>
-                    <p>
+                    <h4 class="u-hidden">current tab content</h4>
+                    <p class="About-tabContent">
                     The best way to make your product well known is by creating your own brand
                     with us, we don't only create brand we create a logo for you as well and
                     delivered your product as planned and as sheduled.
@@ -63,26 +63,28 @@
                 Something small enough to escape casual notice.
             </details>   -->
         </article>
-        <article>
-            <h2 class="hidden">Features</h2>
-            <article>
-                <h3><b class="hidden">feature icon</b> <img src="" alt="mega phone"><br/>500+</h3>
-                <h4><b>Successfully</b>Completed Projects</h4>
-                <p>We have completed over 500 projects , due to our large number of staffs and their hardwork to deliver the projects</p>
-            </article>
-            <article>
-                <h3><b class="hidden">feature icon</b> <img src="" alt="mega phone"><br/>254+</h3>
-                <h4>Highly Specialised employees</h4>
-                <p>We have over 254 Highly Specialised employees , who have knowledge in logo design, web design and branding experience</p>
-            </article>
-            <article>
-                <h3><b class="hidden">feature</b> <img src="" alt="mega phone"><br/>45+</h3>
-                <h4><b>Awards</b>Around the world</h4>
-                <p>We have recieved over 45 Awards due to our fast delivery of projects and ways we handle any projects from our clients</p>
-            </article>
+        <article class="Feature">
+            <div class="u-wrapper u-grid u-grid3 Feature-wrapper">
+                <h2 class="u-hidden">Features</h2>
+                <article class="Feature-card u-wrapperSpace ">
+                    <h3 class="Heading Feature-cardTitle"><img src="./assets/image/icon/comment.png" alt="mega phone"><br/>500+</h3>
+                    <h4 class="Heading Feature-cardSubtitle"><b>Successfully</b>Completed Projects</h4>
+                    <p class="Feature-desc">We have completed over 500 projects , due to our large number of staffs and their hardwork to deliver the projects</p>
+                </article>
+                <article class="Feature-card u-wrapperSpace  Feature-cardActive">
+                    <h3 class="Heading Feature-cardTitle"><img src="./assets/image/icon/megaphone.png" alt="mega phone"><br/>254+</h3>
+                    <h4 class="Heading Feature-cardSubtitle"><b>Highly Specialised</b> employees</h4>
+                    <p class="Feature-desc">We have over 254 Highly Specialised employees , who have knowledge in logo design, web design and branding experience</p>
+                </article>
+                <article class="Feature-card u-wrapperSpace ">
+                    <h3 class="Heading Feature-cardTitle"><img src="./assets/image/icon/megaphone.png" alt="mega phone"><br/>45+</h3>
+                    <h4 class="Heading Feature-cardSubtitle"><b>Awards</b>Around the world</h4>
+                    <p class="Feature-desc">We have recieved over 45 Awards due to our fast delivery of projects and ways we handle any projects from our clients</p>
+                </article>
+            </div>
         </article>
-        <article>
-            <h2>Let's Grow Together <strong>We turn creative ideas into your business</strong></h2>
+        <article class="">
+            <h2 class="heading"><i>Let's Grow Together</i><strong>We turn creative ideas into your business</strong></h2>
             <p><em>Everything built started from an idea,</em>  The best way to make your product well known is by creating your own brand with us</p>
             <button>Read More</button>
         </article>

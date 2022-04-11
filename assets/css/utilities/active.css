@@ -1,4 +1,18 @@
-:is(header, main, footer) p:hover {
-    color: red;
-    cursor: pointer;
-  }
+:is(header, main, footer) a:hover {
+  cursor: pointer;
+  /* content: ' ';
+  position: absolute;
+  height: 3px;
+  width: 46px;
+  bottom: 0; */
+}
+
+
+
+.u-active {
+  border-radius: 23px;
+  background-color: var(--primary-color);
+  color: #fff;
+  margin: 0 18px;
+  box-shadow: 1.1696px 3.8256px 16px 0px rgba(1, 2, 2, 0.35);
+}

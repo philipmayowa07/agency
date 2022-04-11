@@ -1,10 +1,10 @@
 :root {
     --primary-color: hsl(340, 86%, 54%);
     --primary-color-transparent: hsla(340, 86%, 54%, 0.4);
-    --sechondary-color: #6633cc;
     --sechondary-color:  rgb(95, 63, 184);
-    --sechondary-color-active: rgb(40, 29, 60);
-    --base-font-size: 1rem;
+    --sechondary-color-active: hsl(262, 51%, 14%);
+    --sechondary-color-transparent: rgba(95, 63, 184, .8);
+    --base-font-size: 16px;
     --small-screen: 400px;
     --medium-screen: 600px;
     --large-screen: 1200px;
@@ -37,6 +37,7 @@ p {
     font-weight: normal;
     padding: 0;
     margin: 0;
+    font-size: var(--base-font-size);
 }
 
 h1,h2,h3,h4,h5,h6 {
