@@ -4,10 +4,16 @@
     --sechondary-color:  rgb(95, 63, 184);
     --sechondary-color-active: hsl(262, 51%, 14%);
     --sechondary-color-transparent: rgba(95, 63, 184, .8);
+    --gray-color: hsl(0, 0%, 95%);
     --base-font-size: 16px;
+    --font-size-xl: 60px;
+    --font-size-lg: 50px;
+    --font-size-md: 30px;
+    --line-height-sm: 1;
+    --line-height-md: 2;
     --small-screen: 400px;
     --medium-screen: 600px;
-    --large-screen: 1200px;
+    --large-screen: 1240px;
 }
 
 * {
@@ -20,6 +26,10 @@
 a {
     text-decoration: none;
     color: #333;
+}
+
+form {
+    display: inline-block;
 }
 
 img {
@@ -38,9 +48,15 @@ p {
     padding: 0;
     margin: 0;
     font-size: var(--base-font-size);
+    line-height: var(--line-height-md)
 }
 
 h1,h2,h3,h4,h5,h6 {
     padding: 0;
     margin: 0;
+}
+
+blockquote, q {
+    margin: 0;
+    padding: 0;
 }

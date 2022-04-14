@@ -1,8 +1,7 @@
 .Heading {
     position: relative;
     font-weight: 600;
-    line-height: 1;
-      
+    line-height: var(--line-height-sm);
 }
 
 .Heading > strong {

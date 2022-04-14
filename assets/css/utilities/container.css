@@ -1,18 +1,21 @@
 .u-wrapper {
     max-width: var(--large-screen);
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .u-wrapperSpace {
-    padding: 50px 0;
+    padding: 50px 20px;
 }
 
 .u-wrapperSpaceSm {
-    padding: 10px 0;
+    padding: 10px 20px;
 }
 
 .u-grid {
     display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .u-grid2 {
@@ -23,6 +26,11 @@
 .u-grid3 {
     column-gap: 20px;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.u-grid4 {
+    column-gap: 20px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .u-flex {
@@ -80,4 +88,8 @@
 
 .u-textWhite {
     color: #fff
+}
+
+.u-textCenter {
+    text-align: center;
 }

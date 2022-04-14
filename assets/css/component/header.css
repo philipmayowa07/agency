@@ -28,21 +28,22 @@
 }
 
 .Header-heading {
-    font-size: 60px;
+    font-size: var(--font-size-xl);
     margin-top: 65px;
     grid-column: 1;
     grid-row: 1;
 }
 
 .Header-heading > i {
-    font-size: 30px;
+    font-size: var(--font-size-md);
 }
 
 .Header-desc {
-    font-size: 24px;
+    font-size: calc(var(--font-size-md) - 6px);
     margin: 35px 0;
     grid-column: 1;
     grid-row: 2;
+    line-height: calc(var(--line-height-md) - .5);
 }
 
 .Header-buttonWrapper {
