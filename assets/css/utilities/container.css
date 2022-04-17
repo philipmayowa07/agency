@@ -1,7 +1,8 @@
 .u-wrapper {
-    max-width: var(--large-screen);
+    max-width: var(--xlarge-screen);
     margin: 0 auto;
     padding: 0 20px;
+    overflow: hidden;
 }
 
 .u-wrapperSpace {
@@ -84,6 +85,10 @@
 .u-shadowRed {
     box-shadow: 0px 10px 0px 0px var(--primary-color-transparent);
       
+}
+
+.u-shadowBlue {
+    box-shadow: inset 0px 10px 0px 0px var(--sechondary-color-transparent); 
 }
 
 .u-textWhite {

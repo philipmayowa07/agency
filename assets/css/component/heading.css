@@ -1,15 +1,15 @@
 .Heading {
     position: relative;
-    font-weight: 600;
+    font-weight: var(--font-semiBold);
     line-height: var(--line-height-sm);
 }
 
 .Heading > strong {
-    font-weight: 600;
+    font-weight: var(--font-semiBold);
 }
 
 .Heading > i {
-    font-weight: 300;
+    font-weight: var(--font-light);
     display: block;
     margin-bottom: 18px;
 }

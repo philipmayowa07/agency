@@ -8,7 +8,7 @@
     <link type="text/css" rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header class="Header  c-overlay">
+    <header class="Header  c-overlay" id="home">
         <div class="u-wrapper u-wrapperSpaceSm u-grid u-grid2">
             <section class="Header-logo u-zIndex">
                 <h2 class="u-hidden">BlueRex Logo</h2>
@@ -16,13 +16,13 @@
             </section>
             <nav class="Header-nav u-flex u-flexJustifyCenter">
                 <ul class="u-flex u-flexRow u-flexJustifyEnd u-noListStyle u-capitalize">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">Product</a></li>
-                    <li><a href="">Faq</a></li>
-                    <li><a href="">Review</a></li>
-                    <li><a href="">contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#feature">Features</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#faq">Faq</a></li>
+                    <li><a href="#review">Review</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
             <article class="Header-content u-grid u-grid2  u-zIndex">
@@ -37,7 +37,7 @@
         </div>
     </header>
     <main class="Main">
-        <article class="u-wrapper u-wrapperSpace u-grid u-grid2 About">
+        <article class="u-wrapper u-wrapperSpace u-grid u-grid2 About" id="about">
             <h2 class="Heading About-heading"><i>No Dream is small</i> <strong>We turn your dreams into reality</strong></h2>
             <section class="About-tab">
                 <h3 class="u-hidden">Tabs</h3>
@@ -63,7 +63,7 @@
                 Something small enough to escape casual notice.
             </details>   -->
         </article>
-        <article class="Feature">
+        <article class="Feature" id="feature">
             <div class="u-wrapper u-grid u-grid3 Feature-wrapper">
                 <h2 class="u-hidden">Features</h2>
                 <article class="Feature-card u-wrapperSpace ">
@@ -83,15 +83,10 @@
                 </article>
             </div>
         </article>
-        <!-- <article class="">
-            <h2 class="heading"><i>Let's Grow Together</i><strong>We turn creative ideas into your business</strong></h2>
-            <p><em>Everything built started from an idea,</em>  The best way to make your product well known is by creating your own brand with us</p>
-            <button>Read More</button>
-        </article> -->
-        <article class="u-wrapper Product u-wrapperSpace u-grid">
+        <article class="u-wrapper Product u-wrapperSpace u-grid" id="product">
             <h2 class="Product-heading Heading"><strong>Our Recent Work</strong></h2>
             <p class="Product-desc">These are the list of top rated product we have branded , logos we have design to bring out our client intension to thier customers and width
-                great marketing strategies to make thier product <mark>knownn</mark> 
+                great marketing strategies to make thier product knownn
             </p>
             <section class="Product-tab">
                 <h3 class="u-hidden">Tabs</h3>
@@ -143,7 +138,7 @@
                 <button class="Product-tabButton Button Button-sm u-textWhite u-shadowRed">Read More</button>
             </section>
         </article>
-        <article class="Faq">
+        <article class="Faq" id="faq">
             <h2 class="u-hidden">faq</h2>
             <section class="Faq-content u-wrapper u-wrapperSpace u-grid u-grid4">
                 <h2 class="u-hidden">Our trusted patners</h2>
@@ -181,7 +176,7 @@
                 </article>
             </section>
         </article>
-        <article class="Testimonial">
+        <article class="Testimonial" id="review">
             <div class="Testimonial-wrapper u-wrapper u-wrapperSpace u-grid u-grid2 u-textWhite">
                 <h2 class="Heading Testimonial-heading"><i>Our Happy Client</i><strong>Testimonial</strong></h2>
                 <section class="Testimonial-content">
@@ -197,43 +192,44 @@
                 <img src="./assets/image/testimonial.png" alt="Johnny Kolsch bottle" class="Testimonial-img"/>
             </div>
         </article>
-        <article class="Contact u-textWhite u-textCenter"> 
+        <article class="Contact u-textWhite u-textCenter" id="contact"> 
             <div class="u-wrapper u-wrapperSpace">
                 <h2 class="Heading Contact-heading"><strong>Need Help ?</strong></h2>
                 <h3 class="Heading Contact-subHeading">Don't forget to contact us</h3>
                 <p>Our support team are available 24/7 to answer your questions </p>
-                <form class="Form Contact-form">
-                    <input type="text" name="customer name" id="name"/>
-                    <input type="email" name="email" id="email"/>
-                    <button type="submit">Submit</button>
+                <form class="Form Contact-form u-flex u-flexRow" method="post">
+                    <!-- <label for="name"/> -->
+                    <input type="text" name="customer name" id="name" placeholder="Customer Name"/>
+                    <input type="email" name="email" id="email" placeholder="Email"/>
+                    <button type="submit" class="Contact-button Button Button-sm u-textWhite u-shadowBlue">Submit</button>
                 </form>
-                <footer>
-                    <ul class="u-noListStyle u-flex u-flexRow u-flexJustifyCenter">
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Twitter</a></li>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Whatsapp</a></li>
-                        <li><a href="">LinkedIn</a></li>
-                    </ul>
-                </footer>
             </div>
+            <footer class="Contact-footer">
+                <ul class="Contact-footerContent u-noListStyle u-flex u-flexRow u-flexJustifyCenter  u-wrapper u-wrapperSpace">
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Whatsapp</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                </ul>
+            </footer>
         </article>
     </main>
-    <footer>
-        <div class="u-wrapper">
-            <article>
-                <h2>About Company</h2>
+    <footer class="Footer">
+        <div class="Footer-wrapper u-wrapper u-wrapperSpace u-grid u-grid4 u-textWhite">
+            <article class="Footer-about">
+                <h2 class="Heading Footer-heading">About Company</h2>
                 <article>
-                    <h3>BLUEREX</h3>
-                    <h4>Best branding agency</h4>
+                    <h3 class="Heading Footer-aboutHeading"><strong>BLUEREX</strong></h3>
+                    <h4 class="Heading Footer-aboutSubheading ">Best branding agency</h4>
                     <p>Our aim is to bring your dreams to live by using our professional ideas and creativity
                         to give you the best and deliver your work as sheduled
                     </p>
                 </article>
             </article>
             <article>
-                <h2>Quick Link</h2>
-                <ul>
+                <h2 class="Heading Footer-heading">Quick Link</h2>
+                <ul class="Footer-list u-flex u-noListStyle">
                     <li><a href="">Our Service</a></li>
                     <li><a href="">Contact</a></li>
                     <li><a href="">Terms</a></li>
@@ -242,8 +238,8 @@
                 </ul>
             </article>
             <article>
-                <h2>Brand Categories</h2>
-                <ul>
+                <h2 class="Heading Footer-heading">Brand List</h2>
+                <ul class="Footer-list u-flex u-noListStyle">
                     <li><a href="">T-shirt</a></li>
                     <li><a href="">Mug</a></li>
                     <li><a href="">Tag</a></li>
@@ -252,15 +248,15 @@
                 </ul>
             </article>
             <article>
-                <h2>Contact Us</h2>
-                <address>
-                    <p>No 145 new street line, opp site resturant NGA</p>
-                    <a href="mailto:bluerex@in.com">bluerex@in.com</a><br>
-                    <a href="tel:+123456789">(311) 555-2368</a>
+                <h2 class="Heading Footer-heading">Contact Us</h2>
+                <address class="Footer-address">
+                    <p><img src="assets/image/icon/location.png"/> No 145 new street line, opp site resturant NGA</p>
+                    <a href="mailto:bluerex@in.com"><img src="assets/image/icon/mail.png"/> bluerex@in.com</a>
+                    <a href="tel:+123456789"><img src="assets/image/icon/phone.png"/> (311) 555-2368</a>
                 </address>
             </article>
-            <p>&copy; by Bluerex 2022</p>
         </div>
+        <p class="Footer-copywrite">&copy; 2022 by Bluerex Branding Agency</p>
     </footer>
 </body>
 </html>

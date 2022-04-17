@@ -15,6 +15,6 @@ nav ul > li:last-child {
 }
 
 nav a {
-    color: #fff;
+    color: var(--default-white-color);
     font-size: 16px;
 }

@@ -60,7 +60,7 @@
 .Feature-card {
     position: relative;
     text-align: center;
-    color: #fff;
+    color: var(--default-white-color);
 }
 
 .Feature-cardTitle {
@@ -199,11 +199,15 @@
     left: 0;
 }
 
+.Testimonial-rating {
+    margin: 15px 0;
+}
+
 .Testimonial-rating::before {
-    content: '\22c6\22c6\22c6\22c6\22c6';
-    font-size: var(--font-size-lg);
+    content: '\2605\A0\2605\A0\2605\A0\2605\A0\2605';
+    font-size: var(--font-size-md);
     color: var(--primary-color);
-    font-weight: 600;
+    font-weight: var(--font-semiBold);
 }
 
 .Testimonial-img {
@@ -214,6 +218,10 @@
 .Contact {
     position: relative;
     background-color: var(--primary-color);
+    position: relative;
+    background-image: url("../../image/background/contact.png");
+    background-attachment: scroll;
+    background-repeat: repeat;
 }
 
 .Contact-heading {
@@ -227,4 +235,65 @@
 
 .Contact-form {
     margin-top: 35px;
+    width: 100%;
+}
+
+.Contact-form input {
+    flex-grow: 1;
+    padding: 15px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.Contact-form input::placeholder {
+    font-weight: var(--font-semiBold);
+}
+
+.Contact-button {
+    padding: 0 15px;
+    border-radius: 10px;
+    background-color: var(--sechondary-color);
+    padding-bottom: -10px;
+}
+
+.Contact-footer {
+    position: relative;
+    transform: skewY(-3deg);
+    background-color: var(--sechondary-color);
+    top: 80px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.Contact-footer::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    top: -80px;
+    bottom: 70px;
+    left: 0;
+    background-color: var(--sechondary-color);
+    transform: skewY(3deg);
+}
+
+.Contact-footerContent {
+    transform: skewY(3deg);
+    position: relative;
+    top: -40px
+}
+
+.Contact-footerContent li {
+    border-right-width: 2px;
+    border-right-color: var(--border-color);
+    border-right-style: dotted
+}
+
+.Contact-footerContent li:nth-child(5) {
+    border-right: none
+}
+
+.Contact-footerContent li > a {
+    color: var(--default-white-color);
+    padding: 0 20px;
+    cursor: pointer;
 }

@@ -5,16 +5,23 @@
     background-position: top left;
     background-repeat: repeat;
     background-size: contain;
-    color: #fff;
+    color: var(--default-white-color);
 }
 
 .Header::before {
     background-image: linear-gradient( 45deg, hsla(340, 86%, 54%, .8) 0%, rgba(68,46,130, .95) 99%);
 }
 
-.Header-logo {
-    width: auto;
+.Header-logo > img {
+    width: 50px;
     grid-column: 1;
+}
+
+@media (min-width: 1024px) {
+    .Header-logo {
+        width: auto;
+        grid-column: 1;
+    }
 }
 
 .Header-nav {

@@ -5,15 +5,22 @@
     --sechondary-color-active: hsl(262, 51%, 14%);
     --sechondary-color-transparent: rgba(95, 63, 184, .8);
     --gray-color: hsl(0, 0%, 95%);
+    --default-white-color: #fff;
+    --default-black-color: #1d1d1d;
     --base-font-size: 16px;
     --font-size-xl: 60px;
     --font-size-lg: 50px;
     --font-size-md: 30px;
     --line-height-sm: 1;
     --line-height-md: 2;
+    --font-semiBold: 600;
+    --font-normal: 400;
+    --font-light: 300;
+    --border-color: #acabb1;
     --small-screen: 400px;
     --medium-screen: 600px;
-    --large-screen: 1240px;
+    --large-screen: 1024px;
+    --xlarge-screen: 1240px;
 }
 
 * {
@@ -25,7 +32,7 @@
 
 a {
     text-decoration: none;
-    color: #333;
+    color: var(--default-black-color);
 }
 
 form {
@@ -44,7 +51,7 @@ ul {
 }
 
 p {
-    font-weight: normal;
+    font-weight: var(--font-normal);
     padding: 0;
     margin: 0;
     font-size: var(--base-font-size);
@@ -59,4 +66,8 @@ h1,h2,h3,h4,h5,h6 {
 blockquote, q {
     margin: 0;
     padding: 0;
+}
+
+button {
+    cursor: pointer;
 }

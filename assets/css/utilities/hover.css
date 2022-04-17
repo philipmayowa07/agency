@@ -1,0 +1,6 @@
+:is(header) a:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+    text-shadow: 0 0 1px #fff;
+    transition: color .3s ease-in;
+}
