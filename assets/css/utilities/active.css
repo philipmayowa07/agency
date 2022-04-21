@@ -1,7 +1,6 @@
 .u-active {
   border-radius: 23px;
-  background-color: var(--primary-color);
-  color: var(--default-white-color);
-  margin: 0 18px;
+  background-color: var(--primary-color) !important;
+  color: var(--default-white-color) !important;
   box-shadow: 1.1696px 3.8256px 16px 0px rgba(1, 2, 2, 0.35);
 }

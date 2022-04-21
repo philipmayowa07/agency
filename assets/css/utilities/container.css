@@ -6,11 +6,22 @@
 }
 
 .u-wrapperSpace {
-    padding: 50px 20px;
+    padding: 30px 20px;
 }
 
+
 .u-wrapperSpaceSm {
-    padding: 10px 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+@media (min-width: 920px) {
+    .u-wrapperSpace {
+        padding: 50px 20px;
+    }
+
+    .u-wrapperSpaceSm {
+        padding: 10px 20px 10px 20px;
+    }
 }
 
 .u-grid {
@@ -25,13 +36,28 @@
 }
 
 .u-grid3 {
-    column-gap: 20px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 0;
+    column-gap: 0;
+    grid-template-columns: none;
+    grid-template-rows: auto;
 }
 
 .u-grid4 {
     column-gap: 20px;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 920px) {
+    .u-grid3 {
+        column-gap: 20px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: none;
+        row-gap: 0;
+    }
+
+    .u-grid4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
 }
 
 .u-flex {
@@ -83,12 +109,13 @@
 }
 
 .u-shadowRed {
-    box-shadow: 0px 10px 0px 0px var(--primary-color-transparent);
-      
+    box-shadow: 0px 5px 0px 0px var(--primary-color-transparent);
 }
 
-.u-shadowBlue {
-    box-shadow: inset 0px 10px 0px 0px var(--sechondary-color-transparent); 
+@media (min-width: 560px) {
+    .u-shadowRed {
+        box-shadow: 0px 10px 0px 0px var(--primary-color-transparent);
+    }
 }
 
 .u-textWhite {

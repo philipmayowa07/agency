@@ -3,18 +3,24 @@ nav {
 }
 
 nav ul > li {
-    padding: 0 1.125rem;
+    padding: 18px 0;
 }
 
-nav ul > li:first-child {
-    padding-left: 0;
-}
+@media (min-width: 1024px) {
+    nav ul > li {
+        padding: 0 18px;
+    }
 
-nav ul > li:last-child {
-    padding-right: 0;
+    nav ul > li:first-child {
+        padding-left: 0;
+    }
+    
+    nav ul > li:last-child {
+        padding-right: 0;
+    }
 }
 
 nav a {
     color: var(--default-white-color);
-    font-size: 16px;
+    font-size: var(--base-font-size);
 }

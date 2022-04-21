@@ -5,16 +5,30 @@
     margin: 0;
     color: #fff;
     display: block;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: var(--font-normal);
+    font-size: calc(var(--base-font-size) - 2px);
     border: none;
 }
 
 .Button-lg {
-    padding: 14px 27px;
+    padding: 10px 15px;
 }
 
 .Button-sm {
-    padding: 10px 14px;
+    padding: 4px 8px;
     border-radius: 10px;
+}
+
+@media (min-width: 570px) {
+    .Button {
+        font-size: var(--base-font-size);
+    }
+
+    .Button-lg {
+        padding: 14px 27px;
+    }
+
+    .Button-sm {
+        padding: 10px 14px;
+    }
 }

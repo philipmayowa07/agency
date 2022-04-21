@@ -17,8 +17,8 @@
     --font-normal: 400;
     --font-light: 300;
     --border-color: #acabb1;
-    --small-screen: 400px;
-    --medium-screen: 600px;
+    --small-screen: 570px;
+    --medium-screen: 920px;
     --large-screen: 1024px;
     --xlarge-screen: 1240px;
 }
@@ -27,7 +27,7 @@
     box-sizing: border-box;
     resize: none;
     user-select: text;
-    font-family: 'Montserrat', Arial, Courier, monospace;
+    font-family: 'Open Sans', Montserrat, Arial, Courier, monospace, sans-serif;
 }
 
 a {
@@ -40,7 +40,7 @@ form {
 }
 
 img {
-    display: inline-block;
+    display: block;
     width: auto;
     height: auto;
 }
@@ -61,6 +61,13 @@ p {
 h1,h2,h3,h4,h5,h6 {
     padding: 0;
     margin: 0;
+    font-size: calc(var(--base-font-size) + 2px);
+}
+
+@media (min-width: 560px) {
+    h1,h2,h3,h4,h5,h6 {
+        font-size: calc(var(--base-font-size) + 8px);
+    }
 }
 
 blockquote, q {
