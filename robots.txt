@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot-Image
+Disallow: /images/dogs.jpg
+
+Sitemap: https://philipmayowa07.github.io/agency/sitemap.xml
