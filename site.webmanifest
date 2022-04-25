@@ -1,6 +1,6 @@
 {
-    "name": "BlueRex",
-    "short_name": "BlueRex",
+    "name": "HillStorm",
+    "short_name": "HillStorm",
     "icons": [
         {
             "src": "/assets/image/icon/seo/android-chrome-192x192.png",
@@ -8,8 +8,8 @@
             "type": "image/png"
         },
         {
-            "src": "/assets/image/icon/seo/android-chrome-256x256.png",
-            "sizes": "256x256",
+            "src": "/assets/image/icon/seo/android-chrome-384x384.png",
+            "sizes": "384x384",
             "type": "image/png"
         }
     ],
