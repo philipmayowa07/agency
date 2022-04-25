@@ -39,7 +39,7 @@
         background-color: var(--default-white-color);
         z-index: 2;
         justify-self: flex-end;
-        top: 5px;
+        top: 22px;
     }
     
     .Header-navListIcon::before,  .Header-navListIcon::after{
