@@ -7,20 +7,20 @@
     --gray-color: hsl(0, 0%, 95%);
     --default-white-color: #fff;
     --default-black-color: #1d1d1d;
-    --base-font-size: 16px;
-    --font-size-xl: 60px;
-    --font-size-lg: 50px;
-    --font-size-md: 30px;
+    --base-font-size: 1rem;
+    --font-size-xl: 3.75rem;
+    --font-size-lg: 3.125rem;
+    --font-size-md: 1.875rem;
     --line-height-sm: 1;
     --line-height-md: 2;
     --font-semiBold: 600;
     --font-normal: 400;
     --font-light: 300;
     --border-color: #acabb1;
-    --small-screen: 570px;
-    --medium-screen: 920px;
-    --large-screen: 1024px;
-    --xlarge-screen: 1240px;
+    --small-screen: 35.625rem;
+    --medium-screen: 57.5rem;
+    --large-screen: 64rem;
+    --xlarge-screen: 77.5rem;
 }
 
 * {
@@ -61,12 +61,12 @@ p {
 h1,h2,h3,h4,h5,h6 {
     padding: 0;
     margin: 0;
-    font-size: calc(var(--base-font-size) + 2px);
+    font-size: calc(var(--base-font-size) + .125rem);
 }
 
-@media (min-width: 560px) {
+@media (min-width: 35rem) {
     h1,h2,h3,h4,h5,h6 {
-        font-size: calc(var(--base-font-size) + 8px);
+        font-size: calc(var(--base-font-size) + .5rem);
     }
 }
 

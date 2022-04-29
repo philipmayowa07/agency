@@ -1,6 +1,6 @@
 :is(nav) a:hover {
     cursor: pointer;
     color: var(--primary-color);
-    text-shadow: 0 0 2px var(--default-black-color);
+    text-shadow: 0 0 .125rem var(--default-black-color);
     transition: color .3s ease-in;
 }

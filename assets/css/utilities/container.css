@@ -1,38 +1,38 @@
 .u-wrapper {
     max-width: var(--xlarge-screen);
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1.25rem;
     overflow: hidden;
 }
 
 .u-wrapperSpace {
-    padding: 30px 20px;
+    padding: 1.875rem 1.25rem;
 }
 
 
 .u-wrapperSpaceSm {
-    padding: 10px 20px 10px 20px;
+    padding: .625rem 1.25rem .625rem 1.25rem;
 }
 
-@media (min-width: 920px) {
+@media (min-width: 57.5rem) {
     .u-wrapperSpace {
-        padding: 50px 20px;
+        padding: 3.125rem 1.25rem;
     }
 
     .u-wrapperSpaceSm {
-        padding: 10px 20px 10px 20px;
+        padding: .625rem 1.25rem .625rem 1.25rem;
     }
 }
 
 .u-grid {
     display: grid;
-    column-gap: 20px;
+    column-gap: 1.25rem;
     grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .u-grid2 {
     grid-template-columns: repeat(2, auto);
-    column-gap: 20px
+    column-gap: 1.25rem
 }
 
 .u-grid3 {
@@ -43,13 +43,13 @@
 }
 
 .u-grid4 {
-    column-gap: 20px;
+    column-gap: 1.25rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-@media (min-width: 920px) {
+@media (min-width: 57.5rem) {
     .u-grid3 {
-        column-gap: 20px;
+        column-gap: 1.25rem;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         grid-template-rows: none;
         row-gap: 0;
@@ -88,8 +88,8 @@
 .u-hidden {
     position: absolute;
     z-index: -99999;
-    top: -9999px;
-    left: -9999px;
+    top: -624.9375rem;
+    left: -624.9375rem;
 }
 
 .u-noListStyle {
@@ -105,16 +105,16 @@
 }
 
 .u-shadowBlack {
-    box-shadow: 1.1696px 3.8256px 16px 0px rgba(1, 2, 2, 0.35);
+    box-shadow: .0731rem .2391rem 1rem 0rem rgba(1, 2, 2, 0.35);
 }
 
 .u-shadowRed {
-    box-shadow: 0px 5px 0px 0px var(--primary-color-transparent);
+    box-shadow: 0rem .3125rem 0rem 0rem var(--primary-color-transparent);
 }
 
-@media (min-width: 560px) {
+@media (min-width: 35rem) {
     .u-shadowRed {
-        box-shadow: 0px 10px 0px 0px var(--primary-color-transparent);
+        box-shadow: 0rem .625rem 0rem 0rem var(--primary-color-transparent);
     }
 }
 

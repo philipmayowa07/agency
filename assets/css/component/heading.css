@@ -11,10 +11,10 @@
 .Heading > i {
     font-weight: var(--font-light);
     display: block;
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
 }
 
 .Heading > b {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: .3125rem;
 }
