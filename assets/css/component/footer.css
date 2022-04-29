@@ -1,0 +1,136 @@
+.Footer {
+    background-color: var(--sechondary-color-active);
+    padding-top: 5.625rem;
+    background-image: url("../../image/background/pattern.png");
+    background-blend-mode: color-burn;
+    background-size: contain;
+}
+
+.Footer-heading {
+    margin-bottom: 1.5625rem;
+    position: relative;
+}
+
+.Footer-heading::before,  .Footer-heading::after {
+    position: absolute;
+    content: ' ';
+    bottom: -0.625rem;
+    width: 2.875rem;
+    height: .1875rem;
+    background-color: var(--sechondary-color);
+}
+
+.Footer-heading::after {
+    left: 2.875rem;
+    background-color: var(--primary-color);
+}
+
+.Footer-about {
+    grid-column: 1/3;
+}
+
+.Footer-aboutHeading {
+    margin-bottom: .3125rem;
+    color: var(--primary-color);
+}
+
+.Footer-aboutSubheading {
+    margin-bottom: .8125rem;
+}
+
+.Footer-wrapper {
+    position: relative;
+    column-gap: 1.25rem;
+    row-gap: 3.125rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.Footer-link, .Footer.brand  {
+    grid-row: 2;
+}
+
+.Footer-contact {
+    grid-column: 1/-1;
+}
+
+.Footer-wrapper a {
+    color: var(--default-white-color)
+}
+
+@media (min-width: 57.5rem) {
+    .Footer-wrapper {
+        grid-template-columns: repeat(4, minmax(0, 18.75rem));
+        row-gap: 0;
+    }
+
+    .Footer-wrapper article {
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .Footer-link, .Footer.brand  {
+        grid-row: 1;
+    }  
+
+    .Footer-contact {
+        grid-column: 5/-1;
+    } 
+}
+
+
+.Footer-list > li {
+    margin: .625rem 0; 
+}
+
+.Footer-list > li:first-child {
+    margin: 0 0 .625rem 0;
+}
+
+.Footer-list li > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Footer-list li > a::before {
+    content: ' ';
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--default-white-color);
+    border-width: .5rem 0rem .5rem .5rem;
+    margin-right: .625rem;
+    display: inline-block;
+}
+
+.Footer-address {
+    position: relative;
+}
+
+.Footer-address a {
+    display: flex;
+    align-items: center;
+    margin: .625rem 0 1.25rem 0;
+}
+
+.Footer-address p {
+    display: flex;
+    align-items: flex-start;
+}
+
+.Footer-address a > img, .Footer-address  p > img{
+    margin-right: .625rem;
+}
+
+.Footer-address p > span {
+    position: relative;
+    top: -0.3125rem;
+}
+
+.Footer-copywrite {
+    text-align: center;
+    background-color: rgba(0, 0, 0, .45);
+    color: var(--default-white-color);
+    padding: .625rem 0;
+    font-size: calc(var(--base-font-size) - .125rem);
+}

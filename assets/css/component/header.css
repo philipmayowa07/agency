@@ -1,0 +1,163 @@
+.Header {
+    position: relative;
+    background-image: url("../../image/background/entrepreneur.png");
+    background-attachment: scroll;
+    background-position: top left;
+    background-repeat: repeat;
+    background-size: contain;
+    color: var(--default-white-color);
+}
+
+.Header::before {
+    background-image: linear-gradient( 45deg, hsla(340, 86%, 54%, .8) 0%, rgba(68,46,130, .95) 99%);
+}
+
+.Header-logo {
+    width: auto;
+    grid-column: 1;
+}
+
+.Header-logo > img {
+    width: 12.5rem;
+}
+
+@media (min-width: 64rem) {
+    .Header-logo > img {
+        width: auto;
+        transform: scale(1.1);
+        transform-origin: left top;
+    }
+}
+
+.Header-nav {
+    grid-column: 2/-1;
+}
+
+@media (max-width: 64rem) {
+    .Header-navListIcon {
+        position: relative;
+        width: 1.875rem;
+        height: .1875rem;
+        background-color: var(--default-white-color);
+        z-index: 2;
+        justify-self: flex-end;
+        top: 1.375rem;
+    }
+    
+    .Header-navListIcon::before,  .Header-navListIcon::after{
+        content: ' ';
+        width: 1.875rem;
+        height: .1875rem;
+        background-color: var(--default-white-color);
+        position: absolute;
+        top: .5625rem;
+    }
+    
+    .Header-navListIcon::after {
+        top: 1.125rem;
+    }
+
+    .Header-navLg {
+        position: absolute;
+        display: flex;
+        justify-content: flex-start;
+        visibility: hidden;
+        z-index: -9999;
+    }
+
+    .Header-navLg--visible {
+        visibility: visible;
+        z-index: 9999;
+    }
+
+    .Header-navLg > ul {
+        flex-direction: column;
+    }
+}
+
+.Header-content {
+    margin-top: 1.5rem;
+    grid-column: 1/-1;
+    align-items: flex-end;
+}
+
+.Header-heading {
+    font-size: var(--font-size-md);
+    margin-bottom: 1.875rem;
+    grid-column: 1;
+    grid-row: 1;
+    text-shadow: .1875rem .0625rem .3125rem rgba(0,0,0, .45);
+}
+
+
+.Header-heading > i {
+    font-size: calc(var(--font-size-md) - .625rem);
+}
+
+.Header-desc {
+    font-size: calc(var(--font-size-md) - .75rem);
+    margin: 0 0 1.25rem 0;
+    line-height: calc(var(--line-height-md) - .5);
+    align-self: flex-end;
+    grid-row: 2;
+    text-shadow: .0625rem 0 .0625rem rgba(0,0,0, .45);
+}
+
+@media (min-width: 35.625rem) {
+    .Header-heading {
+        font-size: calc(var(--font-size-md) + .625rem);
+    }
+
+    .Header-heading > i {
+        font-size: var(--font-size-md);
+    }
+
+    .Header-desc {
+        font-size: calc(var(--font-size-md) - .5rem);
+        line-height: calc(var(--line-height-md) - .5);
+    }
+}
+
+@media (min-width: 64rem) {
+    .Header-heading {
+        font-size: var(--font-size-xl);
+    }
+    .Header-desc {
+        font-size: calc(var(--font-size-md) - .375rem);
+    }
+}
+
+.Header-buttonWrapper {
+    align-self: flex-start;
+    grid-row: 3;
+}
+
+.Header-button {
+    border-radius: 1.5625rem;
+}
+
+.Header-buttonLeft {
+    background-color: var(--primary-color);
+}
+
+.Header-buttonRight {
+    background-color: var(--sechondary-color);
+    margin-left: 1.25rem;
+}
+
+.Header-img {
+    filter: drop-shadow(.1875rem .0625rem .625rem var(--sechondary-color));
+    grid-row: 4;
+    margin-top: 2.5rem;
+    justify-self: center;
+    -webkit-filter: drop-shadow(.1875rem .0625rem .625rem var(--sechondary-color));
+}
+
+@media (min-width: 47.5rem) {
+    .Header-img {
+        filter: drop-shadow(.1875rem .0625rem .625rem var(--sechondary-color));
+        grid-row: 1/4;
+        grid-column: 2/-1;
+        margin-top: 0;
+    }
+}

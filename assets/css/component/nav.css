@@ -1,0 +1,26 @@
+nav {
+    position: relative;
+}
+
+nav ul > li {
+    padding: 1.125rem 0;
+}
+
+@media (min-width: 64rem) {
+    nav ul > li {
+        padding: 0 1.125rem;
+    }
+
+    nav ul > li:first-child {
+        padding-left: 0;
+    }
+    
+    nav ul > li:last-child {
+        padding-right: 0;
+    }
+}
+
+nav a {
+    color: var(--default-white-color);
+    font-size: var(--base-font-size);
+}
